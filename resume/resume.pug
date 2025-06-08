@@ -1,0 +1,207 @@
+doctype 5
+html
+  head
+    title Zhang Yi Jiang Resume
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700")
+    link(rel="stylesheet" href="./resume.css")
+    base(target="_blank")
+
+  body
+    header
+      .title
+        h1 
+          | Zhang #[u Yi Jiang]
+          span 张易江
+      aside
+        a(href='mailto:zhangyijiang@protonmail.com') zhangyijiang@protonmail.com
+        br
+        a(href='https://github.com/ZhangYiJiang/') github.com/ZhangYiJiang
+        p San Francisco / H1B1 visa
+
+    main
+      section
+        h2: span Work Experience
+        .items
+          .work-item
+            header
+              .position
+                h3
+                  | Ironclad
+                  img(src="./ironclad.png" alt="")
+                  a(href="https://ironcladapp.com") ironcladapp.com
+                p Staff Software Engineer 
+                p Jurist (LLM Assistant)
+              aside.time
+                  p San Francisco
+                  p Mar 2024 -
+            
+            ul
+              li Help launch major new LLM-based AI assistant product, Ironclad's fastest growing product launch 
+              li Integrate Ironclad Editor into Jurist, allowing the AI to read and edit Microsoft Word documents
+              li Technologies: React, NodeJS, SCSS, Postgres
+
+            header
+              .position
+                p Senior Software Enginner
+                p Workflow and Document AI
+              aside.time
+                  p San Francisco
+                  p Jan 2022 - Mar 2024
+            ul
+              li Started Ironclad's design system
+              li Implemented system for monitoring frontend size regressions in CI 
+              li Significantly optimize Ironclad Editor performance using virtualization, allowing it to handle documents longer than 100 pages in the browser
+
+            header
+              .position
+                p Software Engineer 
+                p Negotiation and Editor team
+              aside.time
+                  p San Francisco
+                  p Apr 2019 - Jan 2022
+
+            ul
+              li Implemented Microsoft Word compatible track changes and comments in Ironclad Editor using React and NodeJS
+              li Implemented major Editor product redesign supporting Ironclad Editor product launch. Ironclad Editor is now used by Ironclad customers daily
+              li Implemented major upgrade to Ironclad's internal workflow document system to support major new features like allowing multiple documents
+            
+          //- .work-item
+            header
+              .position
+                h3
+                  | nuTonomy Asia
+                  img(src="./nutonomy.png", alt="")
+                p Services and Applications Intern
+              aside.time
+                p Singapore
+                p May - Aug 2018
+            ul
+              li
+                | Integrated nuTonomy's next generation semantic map annotation tool with Jira project
+                | management system, #[strong significantly improving annotator productivity]
+              li Technology: TypeScript, React, RxJS, Leaflet, ASP.NET Core
+          //- .work-item
+            header
+              .position
+                h3
+                  | Zendesk
+                  img(src="./zendesk.png" alt="")
+                p Software Engineering Intern
+              aside.time
+                p Singapore
+                p May - Aug 2017
+            ul
+              li
+                | Designed, coded and deployed from scratch real-time monitoring system
+                | for Zendesk Chat's NodeJS middleware service that consists of over 100 servers spread
+                | across six AWS regions
+              li
+                | Successfully mitigated a severe service outage by pinpointing unhealthy servers for the
+                | DevOps team
+              li Technology: NodeJS, VueJS
+
+          .work-item
+            header
+              .position
+                h3 National University of Singapore #[img(src="./nus.png" alt="")]
+                p Tutor
+              aside.time
+                p Singapore
+                p Aug 2016 - Dec 2018
+
+            ul
+              li CS1010X - Graded and helped students of introductory programming module
+              li CS3216 - Administered and created assignments for innovative application development module
+              li CS3217 - Graded assignments for iOS software engineering module
+
+      section
+        h2: span Projects
+        .items
+          .work-item
+              header
+                .position
+                  h3
+                    | NUSMods
+                    img(src="./nusmods.png" alt="")
+                    a(href="https://nusmods.com") nusmods.com
+                  p Lead Maintainer
+                aside.time
+                  p Singapore
+                  p Aug 2017 - Apr 2019
+              ul
+                li
+                  | Completed a rewrite of the entire frontend to React from Backbone of the timetable
+                  | planning app used by over 30,000 students with over 1.5 million page views per month
+                li
+                  | New version is responsive across desktop, tablets and phones, offline capable
+                  | with service worker, and has significantly improved performance
+                li Technology: React, Redux, NodeJS
+          //- .work-item
+            header
+              .position
+                h3 ShuttleShocked #[a(href="https://gitlab.com/ZhangYiJiang/CS3247-Bullet-Hell") gitlab.com/ZhangYiJiang/CS3247-Bullet-Hell]
+            ul
+              li
+                | Team lead on intense, fast paced VR bullet hell game, programmed main
+                | gameplay mechanics, materials and effects
+              li #[strong Winner] of 12#[sup th] School of Computing Term Project Showcase
+              li Technology: Unreal Engine 4, Steam VR
+
+          //- .work-item
+            header
+              .position
+                h3 LittleMaze #[img(src="./littlemaze.png" alt="")]
+            ul
+              li
+                | Architectured and coded iPad Pacman clone that utilized a
+                | #[strong novel split client/engine architecture] which allowed the game to be deployed
+                | to multiple environments, including on servers
+              li
+                | Allowed players to write custom AI in JavaScript to control the game for teaching
+                | and entertainment
+              li Technology: Swift, SpriteKit
+
+          //- .work-item
+            header
+              .position
+                h3
+                  | A*genda
+                  img(src="./agenda.png" alt="")
+                  a(href="https://github.com/ZhangYiJiang/jublia-agenda") github.com/ZhangYiJiang/jublia-agenda
+            ul
+              li
+                | Prototyped fully functional event agenda builder for local business matching and
+                | partnering startup Jublia
+              li
+                | Created entire backend API with proper database schema and extensive test coverage
+                | #[strong in three weeks] so that the rest of the team can focus on the frontend
+              li Technology: Django, AngularJS
+
+          //- .work-item
+            header
+              .position
+                h3
+                  | PinPoint
+                  img(src="./pinpoint.png" alt="")
+                  a(href="https://pinpoint-staging.herokuapp.com/") pinpoint-staging.herokuapp.com
+            ul
+              li
+                | Created augmented reality mobile web app projecting location markers
+                | onto phone camera image
+              li
+                | Tracked and synchronized user's location in real time so they can locate
+                | each other in the urban environment
+              li Technology: VueJS, Three.js, WebRTC, OSM Buildings
+
+      section
+        h2: span Education
+        .items
+          .work-item
+            header
+              .position
+                h3 National University of Singapore #[img(src="./nus.png" alt="")]
+              aside.time
+                p 2015-2018
+            ul
+              li Bachelor of Computing (Honours) in Computer Science
+              li Focus area: Computer Security

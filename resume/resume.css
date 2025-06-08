@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My styles */
+
+body {
+    max-width: 40rem;
+    line-height: 1.35;
+    padding: 1.5rem;
+    font-family: Lato, sans-serif;
+}
+
+a {
+    transition: color 0.2s;
+}
+
+strong {
+    font-weight: bold;
+}
+
+sup, sub {
+    font-size: 0.6em;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+a:link,
+a:visited {
+    color: #2196F3;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(33, 150, 243, 0.4);
+}
+
+a:hover {
+    color: rgb(94, 171, 235);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1 span {
+    color: #999;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}
+
+h2,
+h3 {
+    font-size: 1.1rem;
+    color: rgb(37, 55, 155);
+}
+
+h3 img {
+    display: inline-block;
+    margin: 0 0.2rem -0.1rem 0.4rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+h3 a {
+    vertical-align: 1px;
+    font-size: 0.9rem;
+}
+
+section,
+header {
+    display: flex;
+}
+
+body > header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #999;
+}
+
+body > header aside {
+    font-size: 0.8rem;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+header aside {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #999;
+    line-height: 1.45;
+}
+
+header:not(:first-of-type) {
+    margin-top: 1.4rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+section > h2 {
+    flex: 0 0 8rem;
+}
+
+.items {
+    flex: 1 auto;
+}
+
+.work-item {
+    margin-bottom: 1rem;
+}
+
+.position p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.position p:first-of-type {
+    color: #333;
+}
+
+ul, p {
+    font-size: 0.9rem;
+    list-style: circle outside;
+}
+
+ul li {
+    margin-bottom: 0.4rem;
+}
+
+@media print {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    body > header {
+        border: 0;
+        margin-bottom: 0;
+    }
+
+    section {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    section > h2 {
+        flex: 0 0 auto;
+        text-align: center;
+        margin-bottom: 0.2rem;
+        overflow: hidden;
+    }
+
+    section > h2 span {
+        position: relative;
+    }
+
+    section > h2 span::after,
+    section > h2 span::before {
+        content: '';
+        border-bottom: 1px solid #ccc;
+        position: absolute;
+        top: 0.5rem;
+        width: 1000rem;
+    }
+
+    section > h2 span::after {
+        left: 100%;
+        margin-left: 1rem;
+    }
+
+    section > h2 span::before {
+        right: 100%;
+        margin-right: 1rem;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+    }
+}
